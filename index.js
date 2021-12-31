@@ -1,9 +1,9 @@
-var event = requlre ('event')
+var event = require ('events')
 var em = new event.EventEmitter();
 
 em.on('myEvent',function(date){
     count=0;
-    date, forEach(i=> {
+    date.forEach(i=> {
      count = count + i;       
     });
     console.log(count);
